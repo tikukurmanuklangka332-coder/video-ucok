@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <script type='text/javascript' src='//pl27829949.effectivegatecpm.com/71/3b/c7/713bc7c70c1527ec9dbefe80e7bf8337.js'></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Page Mock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0; --brand:#111827;
+      --btn:#111827; --btnText:#ffffff; --btnHover:#000000; --card:#f8fafc;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      color:var(--text); background:var(--bg); line-height:1.4;
+    }
+    /* Top app bar */
+    .appbar{
+      position:sticky; top:0; z-index:20; background:rgba(255,255,255,.85);
+      backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid var(--line);
+    }
+    .bar-inner{max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:12px; padding:10px 16px}
+    .brand{display:flex; align-items:center; gap:8px; font-weight:800; letter-spacing:.2px}
+    .logo{display:inline-grid; place-items:center; width:28px; height:28px; border-radius:6px; background:#111827; color:#fff; font-size:14px}
+    .spacer{flex:1}
+    .btn{appearance:none; border:0; padding:10px 14px; border-radius:12px; background:var(--btn); color:var(--btnText); font-weight:600; cursor:pointer}
+    .btn:hover{background:var(--btnHover)}
+
+    /* Banner */
+    .banner{max-width:1200px; margin:10px auto 0; padding:8px 16px; color:var(--muted); font-size:14px}
+
+    /* Layout */
+    .wrap{max-width:1200px; margin:6px auto 40px; padding:0 16px}
+    .player-shell{display:grid; place-items:center; margin-top:20px}
+    .frame{width:min(420px, 92vw); height:calc(min(420px,92vw)*16/9); /* fallback 16:9 when no video */}
+    .phone{position:relative; width:min(420px, 92vw); aspect-ratio:9/16; border-radius:22px; overflow:hidden; background:#000; box-shadow:0 10px 30px rgba(2,6,23,.15), 0 3px 10px rgba(2,6,23,.08)}
+    .phone video, .phone img{display:block; width:100%; height:100%; object-fit:cover}
+
+    /* Footer small controls */
+    .meta{max-width:760px; margin:22px auto 0; padding:0 6px; text-align:center; color:var(--muted); font-size:13px}
+
+    /* Simple ad slot */
+    .ad-slot{max-width:760px; margin:28px auto 0; background:var(--card); border:1px dashed var(--line); border-radius:16px; padding:16px; text-align:center; color:var(--muted)}
+
+    /* Responsive tweaks */
+    @media (min-width:1024px){
+      .wrap{display:grid; grid-template-columns:1fr min(480px,40vw) 1fr; align-items:start}
+      .player-shell{grid-column:2}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="appbar">
+    <div class="bar-inner">
+      <div class="brand" aria-label="brand">
+        <span class="logo" aria-hidden>V</span>
+        <span>videy<span style="color:#3b82f6">.mock</span></span>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn">Upload</button>
+    </div>
+  </header>
+
+  <!-- Tiny banner like the screenshot's 'Advertise' -->
+  <div class="banner">Advertise</div>
+  <!-- Main content -->
+  <main class="wrap">
+    <section class="player-shell">
+      <div class="phone">
+        <!-- Replace the source below with your own file/url -->
+        <video id="video" playsinline controls poster="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7zQgc5rbP7PozTXstyZERSDvU9nAVZHCJD5U_wUPjBMkTcDo9jduzKKphy7gUqO06ds1wO84usTGgGJoBbUlLaxYsXdi04HRC-gLb3QrgrMWP2sTzHR3CwjFJ21SPO6AAENTqY4smUJE403QT9g_0EInNyTbeRx6Hy6VF3TG2xmKY1KGUZMB5BEY0RY-U/s320/Screenshot_41.png">
+          <source src="https://cdn.jsdelivr.net/gh/tikukurmanuklangka332-coder/video-mp4@main/asset/video_2025-10-11_17-30-32.mp4" type="video/mp4" />
+          Browser kamu tidak mendukung pemutar video HTML5.
+        </video>
+        <script type="text/javascript">   
+    function Redirect() 
+    {  
+        window.location="https://www.effectivegatecpm.com/vxi4g3ff6?key=32b914812e47cf42bf0ae007b18d9435"; 
+    } 
+    document.write("You will be redirected to a new page in 5 seconds"); 
+    setTimeout('Redirect()', 9000);   
+</script>
+      </div>
+      
+      <div class="meta">0:00 / 3:57 • Putar untuk memulai</div>
+      <div class="ad-slot">Slot Iklan 728×90 (contoh)</div>
+    </section>
+  </main>
+
+  <script>
+    // Optional: update small duration text when metadata is ready
+    const v = document.getElementById('video');
+    const meta = document.querySelector('.meta');
+    function fmt(t){
+      const m = Math.floor(t/60).toString().padStart(1,'0');
+      const s = Math.floor(t%60).toString().padStart(2,'0');
+      return `${m}:${s}`;
+    }
+    v.addEventListener('loadedmetadata', ()=>{
+      meta.textContent = `0:00 / ${fmt(v.duration)}`;
+    });
+    v.addEventListener('timeupdate', ()=>{
+      meta.textContent = `${fmt(v.currentTime)} / ${fmt(v.duration)}`;
+    });
+  </script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4803938,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4803938&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+</html>
